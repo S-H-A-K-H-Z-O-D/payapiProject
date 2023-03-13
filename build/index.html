@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="/build/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/build/css/style.css" />
+  </head>
+  <body class="bg-[#EDF3F8]">
+    
+    <!-- Header -->
 
-</body>
+    <header class="head">
+      <div class="flex items-center px-32 py-1 h-[80px]">
+        <a href="./index.html">
+          <img src="./img/logo.png" alt="#" />
+        </a>
+
+        <div class="w-full nav_menu">
+          <div class="navMenu_item"></div>
+
+          <div class="navbar flex items-center w-full">
+            <ul class="flex ml-8 py-10">
+              <li><a class="pl-4 nav_items" href="#">Pricing</a></li>
+              <li><a class="pl-4 nav_items" href="#">About</a></li>
+              <li><a class="pl-4 nav_items" href="#">Contact</a></li>
+            </ul>
+
+            <button
+              class="ml-auto bg-pink-500 px-[25px] py-[8px] rounded-full text-white hover:bg-pink-400"
+            >
+              Schedule a Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section_1 -->
+
+    <section class="section_1 h-[500px] flex items-center px-32">
+      <div class="section1 w-full">
+        <h1 class="text-[#36536B] text-6xl w-[450px] mb-9">
+          Start building with our APIs for absolutely free.
+        </h1>
+        <form class="form w-[400px]">
+          <input
+            class="sec1_input focus:outline-none py-[8px] w-[400px] rounded-full pl-5 shadow-xl"
+            type="email"
+            placeholder="Enter email address"
+          />
+          <button
+            class="sec1_btn ml-auto bg-pink-500 px-[25px] py-[8px] rounded-full text-white hover:bg-pink-400"
+          >
+            Schedule a Demo
+          </button>
+        </form>
+        <p class="pl-5 mt-2 text-[#6C8294]">
+          Have any questions? <span class="font-bold">Contact Us</span>
+        </p>
+      </div>
+    </section>
+  </body>
 </html>
