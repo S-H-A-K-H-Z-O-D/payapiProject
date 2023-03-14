@@ -20,6 +20,7 @@
 }
 
 body{
+    background-color: #EDF3F8;
     font-family: publicSans-400;
 }
 
@@ -50,6 +51,10 @@ body{
 .nav_items:hover{
     color: #36536B;
     opacity: 1;
+}
+
+.navbar >button{
+    @apply ml-auto bg-pink-500 px-[25px] py-[8px] rounded-full text-white hover:bg-pink-400;
 }
 
 @media only screen and (max-width: 1024px){
@@ -172,15 +177,21 @@ body{
 
 /* Section_1 */
 
+.section_1{
+    @apply h-[500px] flex items-center px-32;
+}
+
 .section1{
     position: relative;
 }
 
 .section1 >p{
     padding-right: 24px;
+    @apply pl-5 mt-2 text-[#6C8294];
 }
 
 .section1 >h1{
+    @apply text-[#36536B] text-6xl w-[450px] mb-9;
     font-family: display;
 }
 
@@ -197,12 +208,18 @@ body{
 
 .form{
     position: relative;
+    @apply  w-[400px];
 }
 
 .sec1_btn{
     position: absolute;
     top: 0px;
     right: 0;
+    @apply ml-auto bg-pink-500 px-[25px] py-[8px] rounded-full text-white hover:bg-pink-400;
+}
+
+.sec1_input{
+    @apply focus:outline-none py-[8px] w-[400px] rounded-full pl-5 shadow-xl;
 }
 
 @media only screen and (max-width: 1300px){
@@ -213,6 +230,11 @@ body{
 }
 
 @media only screen and (max-width: 1024px){
+
+    .section_1{
+        margin-bottom: 200px;
+    }
+
 
     .section1{
 
@@ -262,6 +284,10 @@ body{
 }
 
 @media only screen and (max-width: 550px){
+
+    .section_1{
+        margin-bottom: 0px;
+    }
 
     .section1{
         margin-top: 280px;
@@ -337,4 +363,651 @@ body{
         width: auto;
         margin-bottom: 15px;
     }
+}
+
+/* Section_2 */
+
+.section2{
+    position: relative;
+    @apply px-32 py-24 bg-[#1B262F] flex items-center my-20;
+}
+
+.section2::before{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    background: url(/build/img/sec2-ps.png) no-repeat;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+}
+
+.content1{
+    position: relative;
+    z-index: 2;
+    @apply w-[39%];
+}
+
+.content2{
+    @apply  flex flex-wrap items-center w-[560px] ml-auto justify-between;
+}
+
+.content1 >h1{
+    font-family: display;
+    @apply text-[#FBFCFE] text-5xl;
+}
+
+.content1 >p{
+    font-family: publicSans-400;
+    @apply text-[#FBFCFE] leading-7 pt-6 pb-8;
+}
+
+.content1 >a{
+    font-family: publicSans-700;
+    @apply text-[#FBFCFE] py-[10px] px-[25px] border rounded-full border-white hover:bg-white hover:text-[#1B262F];
+}
+
+@media only screen and (max-width: 1280px){
+
+    .section2{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .content1{
+        width: auto;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .content1 >p{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .content2{
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 880px){
+
+    .section2{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .section2::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        background: url(/build/img/sec2-ps-tablet.png) no-repeat;
+        background-size: 100% 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .content2{
+        width: 480px;
+    }
+
+    .content2 >a{
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 580px){
+
+    .section2{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .content2{
+        width: 350px;
+    }
+
+    .content1 >h1{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+    .content2{
+        width: 170px;
+    }
+}
+
+/* Section_3 */
+
+.section_3{
+    position: relative;
+    @apply flex px-32 my-36;
+}
+
+.section3{
+    @apply w-[500px] ml-auto mr-12;
+}
+
+.section_3::after{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 380px;
+    background: url(/build/img/codePic.png) no-repeat;
+    background-size: 100% 100%;
+    left: 80px;
+    top: -80px;
+}
+
+.section3 >h1{
+    font-family: display;
+    @apply text-5xl text-[#36536B];
+}
+
+
+.section3 >p{
+    font-family: publicSans-400;
+    @apply leading-7 pt-6 pb-8;
+}
+
+@media only screen and (max-width: 1280px){
+
+    .section3{
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 1170px){
+
+    .section3{
+        width: auto;
+        margin-top: 300px;
+        text-align: center;
+    }
+
+    .section3 >h1{
+        position: relative;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .section3 >h1::after{
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 380px;
+        background: url(/build/img/codePic.png) no-repeat;
+        background-size: 100% 100%;
+        left: -30px;
+        top: -350px;
+    }
+
+    .section_3::after{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+    .section_3{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .section3 >p{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+
+    .section_3 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .section_3{
+        margin-top: -32px;
+    }
+
+    .section3 >h1{
+        font-size: 30px;
+        width: 250px;
+    }
+
+    .section3 >p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section3 >h1::after{
+        content: "";
+        position: absolute;
+        width: 250px;
+        height: 180px;
+        background: url(/build/img/codePic-tablet.png) no-repeat;
+        background-size: 100% 100%;
+        left: 0px;
+        top: -230px;
+    }
+}
+
+/* Section_4 */
+
+.section_4{
+    position: relative;
+    @apply flex px-32 my-44 mt-80;
+}
+
+.section_4::after{
+    content: "";
+    position: absolute;
+    width: 530px;
+    height: 480px;
+    background: url(/build/img/phones.png) no-repeat;
+    background-size: 100% 100%;
+    right: 150px;
+    top: -150px;
+}
+
+.section_4::before{
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 800px;
+    background: url(/build/img/sec4-ps.png) no-repeat;
+    background-size: 100% 100%;
+    right: 0px;
+    top: -300px;
+}
+
+.section4{
+    @apply w-[500px] mr-auto;
+}
+
+.section4 >h1{
+    font-family: display;
+    @apply text-5xl text-[#36536B];
+}
+
+
+.section4 >p{
+    font-family: publicSans-400;
+    @apply leading-7 pt-6 pb-8;
+}
+
+@media only screen and (max-width: 1280px){
+
+    .section_4::before{
+        display: none;
+    }
+
+    .section4 >p{
+        width: 350px;
+    }
+
+    .section4{
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 1170px){
+
+    .section_4{
+        margin: 50px 0;
+    }
+
+    .section4{
+        width: auto;
+        margin-top: 300px;
+        text-align: center;
+    }
+
+    .section4 >h1{
+        position: relative;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .section4 >p{
+        width: auto;
+    }
+
+    .section4 >h1::after{
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 350px;
+        background: url(/build/img/phones.png) no-repeat;
+        background-size: 100% 100%;
+        left: 0px;
+        top: -400px;
+    }
+
+    .section_4::after{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+    .section_4{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .section4 >p{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+
+    .section_4 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .section_4{
+        margin-top: -32px;
+    }
+
+    .section4 >h1{
+        font-size: 30px;
+        width: 250px;
+    }
+
+    .section4 >p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section4 >h1::after{
+        content: "";
+        position: absolute;
+        width: 250px;
+        height: 220px;
+        background: url(/build/img/phones.png) no-repeat;
+        background-size: 100% 100%;
+        left: 0px;
+        top: -260px;
+    }
+}
+
+/* Section_5 */
+
+.section5{
+    @apply px-32 mb-10 mt-96;
+}
+
+.section5 >div{
+    @apply flex justify-between py-20;
+}
+
+.sec5_item{
+    @apply flex flex-col items-center;
+}
+
+.sec5_item >h3{
+    @apply text-center text-[#36536B] font-bold pb-5;
+}
+
+.sec5_item >p{
+    @apply text-center px-5;
+}
+
+.sec5_title1, .sec5_title2, .sec5_title3{
+    position: relative;
+    width: 200px;
+}
+
+.sec5_title1::after{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: url(/build/img/sec5Ps1.png) no-repeat;
+    background-size: 100% 100%;
+    top: -90px;
+    left: 65px;
+}
+
+.sec5_title2::after{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: url(/build/img/sec5Ps2.png) no-repeat;
+    background-size: 100% 100%;
+    top: -90px;
+    left: 65px;
+}
+
+.sec5_title3::after{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: url(/build/img/sec5Ps3.png) no-repeat;
+    background-size: 100% 100%;
+    top: -90px;
+    left: 65px;
+}
+
+@media only screen and (max-width: 900px){
+
+    .section5{
+        margin-top: 80px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+    .section5{
+        margin-top: 80px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .section5 >div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section5 >div >div:nth-child(2){
+        padding-top: 130px;
+    }
+
+    .section5 >div >div:nth-child(3){
+        padding-top: 130px;
+    }
+}
+
+/* Section_6 */
+
+.section6{
+    @apply flex items-center px-32 mb-16;
+}
+
+.section6 >h1{
+    font-family: display;
+    @apply text-5xl text-[#36536B];
+}
+
+.sec6_form{
+    @apply ml-auto;
+}
+
+.sec6_form >input{
+    position: relative;
+    padding: 7px 25px;
+    padding-right: 250px;
+    @apply rounded-full;
+}
+
+.sec6_form >button{
+    position: absolute;
+    right: 130px;
+    padding: 7px 25px;
+    @apply bg-pink-500 rounded-full text-white hover:bg-pink-400;
+}
+
+.sec6_icons >a{
+    color: white;
+}
+
+.sec6_icons >a:hover{
+    color: #DA6D97;
+}
+
+@media only screen and (max-width: 1100px){
+
+    .section6{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section6 >h1{
+        margin-bottom: 30px;
+    }
+
+    .sec6_form{
+        margin-right: auto;
+        position: relative;
+    }
+
+    .sec6_form >button{
+        position: absolute;
+        right: 0px;
+        padding: 7px 25px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+    .section6{
+        padding: 0;
+        align-items: center;
+    }
+
+    .section6 >h1{
+        font-size: 35px;
+    }
+
+    .sec6_form{
+        position: static;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sec6_form >input{
+        padding-right: 0;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .sec6_form >button{
+        position: static;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+
+    .sec6_form >input{
+        width: auto;
+    }
+
+    .sec6_form >button{
+        width: auto;
+    }
+}
+
+/* Footer */
+
+.footer{
+    @apply px-32 flex items-center bg-[#1B262F];
+    position: relative;
+}
+
+.footer::after{
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 100%;
+    background: url(/build/img/foot-ps.png) no-repeat;
+    background-size: 100% 100%;
+    right: 0;
+    z-index: 1;
+}
+
+.foot{
+    @apply flex items-center;
+}
+
+.foot >ul{
+    @apply flex ml-10;
+}
+
+.foot >ul >li{
+    @apply text-white opacity-70;
+}
+
+.foot >ul >li:hover{
+    @apply text-white opacity-100;
+}
+
+.foot >ul:hover{
+    color: white
+}
+
+.sec6_icons{
+    @apply flex ml-auto py-9;
+    position: relative;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 750px){
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+}
+
+.foot >ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.foot >ul >li{
+    padding-left: 0;
+}
+
+.foot >ul >li:nth-child(2){
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.sec6_icons{
+    margin-right: auto;
+}
 }
