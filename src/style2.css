@@ -1,0 +1,45 @@
+/* Header */
+
+.header{
+    position: relative;
+}
+
+.header::after{
+    content: "";
+    position: absolute;
+    background: url(/build/img2/header-ps.png) no-repeat;
+    background-size: 100% 100%;
+    width: 600px;
+    height: 200px;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    
+}
+
+.section >h1{
+    font-family: display;
+  }
+  
+  .section div >h3{
+    font-family: display;
+  }
+  
+  .dollar{
+    font-family: display;
+  }
+
+  .list-item{
+    position: relative;
+  }
+
+  .list-item::after{
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 9px;
+    background: url(/build/img2/tick.png) no-repeat;
+    background-size: 100% 100%;
+    left: -24px;
+    top: 6px;
+  }
