@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build-css": "tailwindcss build ./src/style.css -o ./build/css/style.css",
-    "build2-css": "tailwindcss build ./src/style2.css -o ./build/css/style2.css",
-    "watch-css": "tailwindcss -i ./src/style.css -o ./build/css/style.css --watch",
-    "watch2-css": "tailwindcss -i ./src/style2.css -o ./build/css/style2.css --watch"
+    "watch-css": "tailwindcss -i ./src/style.css -o ./build/css/style.css --watch"
   },
   "keywords": [],
   "author": "",
