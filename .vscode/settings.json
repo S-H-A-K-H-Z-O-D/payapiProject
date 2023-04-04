@@ -1,3 +1,4 @@
 {
-    "markdown.preview.lineHeight": 3
+    "markdown.preview.lineHeight": 3,
+    "liveServer.settings.port": 5501
 }

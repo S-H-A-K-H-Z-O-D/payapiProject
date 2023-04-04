@@ -10,7 +10,7 @@
 .secOfPsedoEl::after{
     content: "";
     position: absolute;
-    background: url(./img_about/mainPicOfPageAbout.png) no-repeat;
+    background: url(../img_about/mainPicOfPageAbout.png) no-repeat;
     background-size: 100% 100%;
     width: 100%;
     height: 100%;
@@ -19,11 +19,11 @@
 .secOfPsedoEl::before{
     content: "";
     position: absolute;
-    background: url(./img_about/pageAbout-ps.png) no-repeat;
+    background: url(../img_about/pageAbout-ps.png) no-repeat;
     background-size: 100% 100%;
     width: 220px;
     height: 715px;
-    top: -130px;
+    top: -110px;
 }
 
 @media only screen and (max-width: 1180px){
@@ -31,12 +31,20 @@
     .secOfPsedoEl{
         height: 450px;
     }
+
+    .secOfPsedoEl::before{
+        top: -130px;
+    }
 }
 
 @media only screen and (max-width: 1080px){
 
     .secOfPsedoEl{
         height: 400px;
+    }
+
+    .secOfPsedoEl::before{
+        top: -155px;
     }
 }
 
@@ -51,14 +59,49 @@
     }
 }
 
+@media only screen and (max-width: 972px){
+
+    .secOfPsedoEl{
+        height: 310px;
+    }
+}
+
 @media only screen and (max-width: 700px){
 
+    .secOfPsedoEl{
+        height: 500px;
+    }
+
     .secOfPsedoEl::after{
-        content: "";
-        position: absolute;
-        background: url(./img_about/mainPicOfPageAbout.png) no-repeat;
+        background: url(../img_about/mainPic-mobile.png) no-repeat;
         background-size: 100% 100%;
-        width: 100%;
-        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 560px){
+
+    .secOfPsedoEl{
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+
+    .secOfPsedoEl{
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+    .secOfPsedoEl{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+
+    .secOfPsedoEl{
+        height: 250px;
     }
 }
