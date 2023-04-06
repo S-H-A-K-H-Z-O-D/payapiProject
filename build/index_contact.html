@@ -45,18 +45,34 @@
 
         <section class="px-32">
 
-          <h1>Submit a help request and 
+          <h1 class="text-6xl text-[#36536B] w-[700px] my-10 main_title">Submit a help request and 
             we’ll get in touch shortly.</h1>
 
             <div class="flex justify-between items-center">
 
-              <form class="flex flex-col w-[47%]">
+              <form class="flex flex-col w-[47%] space-y-5">
 
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="text" placeholder="Company name" required>
-                <input type="text" placeholder="Title" required>
-                <textarea placeholder="Message" id="" cols="30" rows="5"></textarea>
+              <div class="w-[100%]">
+                <input class="w-[100%] pl-5 pt-1 focus:outline-none pb-5 bg-transparent border-b-2 border-b-[#36536b89]" type="text" placeholder="Name" required>
+                <p class="pl-5 mt-1 text-[#ff00009e] text-[12px]">This field can't be empty</p>
+              </div>
+                <div>
+                  <input class="w-[100%] pl-5 pt-1 pb-5 bg-transparent focus:outline-none border-b-2 border-b-[#36536b89]" type="email" placeholder="Email Address" required>
+                </div>
+              <div>
+                <input class="w-[100%] pl-5 pt-1 pb-5 bg-transparent focus:outline-none border-b-2 border-b-[#36536b89]" type="text" placeholder="Company name" required>
+              </div>
+                <div>
+                  <input class="w-[100%] pl-5 pt-1 pb-5 bg-transparent focus:outline-none border-b-2 border-b-[#36536b89]" type="text" placeholder="Title" required>
+                </div>
+                <textarea class="pl-5 pt-1 pb-5 bg-transparent focus:outline-none border-b-2 border-b-[#36536b89]" placeholder="Message" id="" cols="30" rows="3"></textarea>
+                <div class="flex">
+                  <input type="checkbox">
+                  <p class="px-10 mx-5">Stay up-to-date with company announcements and updates to our API</p>
+                </div>
+                <div>
+                  <button class="rounded-full border mt-2 mb-10 border-[#36536B] text-[#36536B] font-bold py-3 px-12 hover:bg-[#36536B] hover:text-white">Submit</button>
+                </div>
 
               </form>
 
