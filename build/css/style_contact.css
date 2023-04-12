@@ -6,3 +6,42 @@
 .main_title{
     font-family: display;
 }
+
+.check-input{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    appearance: none;
+}
+
+.check-input::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #36536B;
+    opacity: 0.25;
+    top: 0;
+}
+
+.check-input:checked::after{
+    background-color: #BA4270;
+    opacity: 1;
+}
+
+.check-input::before{
+    content: "";
+    position: absolute;
+    background: url(../img_contact/tick.png);
+    background-size: 100% 100%;
+    width: 18px;
+    height: 15px;
+    top: 5px;
+    left: 3.5px;
+    z-index: 1;
+    opacity: 0;
+}
+
+.check-input:checked::before{
+    opacity: 1;
+}
