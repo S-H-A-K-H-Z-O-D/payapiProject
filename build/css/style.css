@@ -775,6 +775,16 @@ video {
   padding-bottom: 9px;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -2159,6 +2169,11 @@ body{
 }
 
 @media (max-width: 620px) {
+  .max-\[620px\]\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
   .max-\[620px\]\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -2189,6 +2204,14 @@ body{
 
   .max-\[620px\]\:border-t-0 {
     border-top-width: 0px;
+  }
+
+  .max-\[620px\]\:border-none {
+    border-style: none;
+  }
+
+  .max-\[620px\]\:pb-4 {
+    padding-bottom: 1rem;
   }
 
   .max-\[620px\]\:text-center {
