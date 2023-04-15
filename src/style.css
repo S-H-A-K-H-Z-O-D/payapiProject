@@ -497,12 +497,12 @@ body{
 .section_3::after{
     content: "";
     position: absolute;
-    width: 500px;
-    height: 380px;
-    background: url(/build/img/codePic.png) no-repeat;
+    width: 400px;
+    height: 270px;
+    background: url(/build/img/codePic-tablet.png) no-repeat;
     background-size: 100% 100%;
-    left: 80px;
-    top: -80px;
+    left: 124px;
+    top: -70px;
 }
 
 .section3 >h1{
@@ -540,11 +540,11 @@ body{
     .section3 >h1::after{
         content: "";
         position: absolute;
-        width: 500px;
-        height: 380px;
-        background: url(/build/img/codePic.png) no-repeat;
+        width: 400px;
+        height: 270px;
+        background: url(/build/img/codePic-tablet.png) no-repeat;
         background-size: 100% 100%;
-        left: -30px;
+        left: 0;
         top: -350px;
     }
 
